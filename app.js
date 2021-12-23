@@ -7,7 +7,7 @@ router.get('/', function(req, res){
     res.sendFile(path.join(__dirname+'/index.html'));
 });
 
-app.use(express.static(__dirname));
+app.use(express.static(__dirname), router);
 app.listen(process.env.port || 3000);
 
 console.log("Server is running");
