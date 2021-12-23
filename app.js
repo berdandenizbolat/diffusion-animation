@@ -8,6 +8,6 @@ router.get('/', function(req, res){
 });
 
 app.use(express.static(__dirname), router);
-app.listen(process.env.port || 3000);
+app.listen("http://vast-headland-68973.herokuapp.com" || 3000);
 
 console.log("Server is running");
